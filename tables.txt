@@ -1,0 +1,29 @@
+# Tables in HTML
+-> Table is used in HTML to display data in the form of rows and columns
+-> Table is created with the help of <table> tag
+-> Here the Tables are created row by row
+
+# Tags mainly used in Tables
+-> <table> : Creates a Table
+-> <tr> : Creates a table row
+-> <th> : Creates a header cell (bold and aligned in the center)
+-> <td> : Creates a data cell
+-> <thead> : Groups the header content
+-> <tbody> : Groups the body content
+-> <tfoot> : Groups the footer content
+
+# Attributes mainly used in Tables
+-> border : It specifies the thickness of the border
+            Eg : <table border="2px">
+-> rules : It controls the internal lines that appear inside a table
+            Eg : <table rules="all">
+-> border-collapse : It is a CSS Property which whether the adjacent cell borders are merged into a single border or kept separate
+            Eg : <table style="border-collapse:collapse">
+-> cellspacing : It specifies the space between 2 table cellspacing
+            Eg : <table cellspacing="3">
+-> cellpadding : It specifies the space between the content and the cell border
+            Eg : <table cellpadding="5">
+-> rowspan : It allows a table cell to merge multiple rows
+            Eg : <td rowspan=2>
+-> colspan : It allows a table cell to merge multiple columns
+            Eg : <td colspan=2>
