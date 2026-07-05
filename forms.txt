@@ -1,0 +1,90 @@
+# Forms in HTML
+-> Forms are used in HTML to collect data from the user through multiple inputs
+-> It is created using <table> tag.
+
+# Tags mainly used in Forms
+-> <form> : This tag is used to group input fields together so that the user's data can be collected and submitted
+-> <fieldset> : This tag is used to group related form elements together inside a form by creating an outline
+-> <legend> : This tag is used to give a caption or title for the form over the <fieldset>
+-> <label> : This tag is used to provide a descriptive text for an input fields
+-> <input> : This tag is used to create an input field where users can enter or select data
+
+
+# Attributes in Forms
+-> for : It is used to create a connection between the label and input
+-> name : It tells the browser that the radio buttons belong to the same group
+-> label : It is used to give a title for the classification given for the optgroup
+
+# Input types in Forms
+-> It is used to specify the type of the input expected from the user
+-> It is given as an attribute in the <input> tag
+
+# types
+-> text : It directly accept plain text of any type of characters
+-> email : It takes the input in the format of an email 
+-> number : It takes input in numerical values
+-> submit : It submits the all the data given by the user
+-> reset : It clears all the existing data entered by the user
+-> password : It hides the characters entered by using dots or asterisks
+-> checkbox : It allows the user to select multiple choices from the given options
+-> radio : It allows user to select a single choice from the given options
+-> color : It allows the user to choose a color using a color picker
+-> date : It allows the user to select a date
+-> datetime-local : It allows the user to select both date and time
+-> file : It allows the user to upload one or more files
+-> hidden : It stores data that is not visible to the user
+-> image : It displays an image that acts as a submit button
+-> month : It allows the user to select a month and year
+-> range : It provides a slider to select a value within a specified range
+-> search : It is used for entering search queries
+-> tel : It is used for entering telephone numbers
+-> time : It allows the user to select a time
+-> url : It accepts a web address (URL)
+-> week : It allows the user to select a week and year
+
+
+
+# Dropdown
+-> Dropdown is an HTML Form control which allows the user to select choices from the given list
+-> <select> : It is used to create a Dropdown
+-> <option> : It is used to add options to the Dropdown
+-> <optgroup> : It is used to give a classification for the dropdown options
+
+# GET and POST Methods
+-> method attribute is used inside the <form> tag to specify how the form data should be sent to the server
+-> There are two commonly used methods : GET and POST
+
+-> GET :
+   -> It sends the form data by appending it to the URL as query parameters
+   -> The submitted data is visible in the URL
+   -> Data is less secure
+   -> There is a limit on the amount of data that can be sent
+   -> Eg : Searching, Filtering
+
+-> POST :
+   -> It sends the form data inside the HTTP request body
+   -> The submitted data is not visible in the URL
+   -> Data is more secure
+   -> It has no size limit for form data
+   -> Eg : Password, Feedbacks
+
+# How to use name attribute to display data in URL
+-> The name attribute is used to identify a form field during form submission
+-> When the form is submitted using the GET method, the browser sends the data in the format :
+   -> name=value
+-> If an input field does not have a name attribute, its value will not be submitted
+-> Example :
+   -> <input type="text" name="username">
+   -> If the user enters John, the URL becomes :
+      -> ?username=John
+
+# Validation Attributes
+-> Validation attributes are used to validate the user's input before submitting the form
+
+# Validation Attributes
+-> required : Makes the input field mandatory
+-> minlength : Specifies the minimum number of characters allowed (Works only for text-based inputs)
+-> maxlength : Specifies the maximum number of characters allowed (Works only for text-based inputs)
+-> min : Specifies the minimum value allowed for number, date, time, range, etc.
+-> max : Specifies the maximum value allowed for number, date, time, range, etc.
+
