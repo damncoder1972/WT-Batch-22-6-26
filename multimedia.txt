@@ -1,0 +1,12 @@
+# Multimedia Tags in HTML
+-> Multimedia tags are HTML elements used to embed and display media content such as images, audio, videos, animations, graphics, and external media on a webpage.
+
+# Tags mainly used in HTML
+-> <img> : It is used to display images
+            Attributes Used : src, alt, width, height
+-> <video> : It is used to play videos 
+            Attributes Used : controls, autoplay, muted, loop, poster, height, width
+-> <audio> : It is used to play audios 
+            Attributes Used : controls, autoplay, muted, loop
+-> <iframe> : It is used to embed webpages or external content
+            Attributes Used : height, width, src 
