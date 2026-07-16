@@ -1,0 +1,160 @@
+# Selectors
+-> It is a CSS Component which is used to target the HTML Elements
+-> There are 4 Types of Selectors
+    --> Simple Selectors    
+    --> Combinator Selectors
+    --> Pseudo Class Selectors
+    --> Pseudo Element Selectors
+
+
+## Simple Selectors
+-> A Simple Selector is a CSS selector that selects HTML elements based on a single condition, such as the element name, ID, class, or attribute,
+
+    --> Universal Selector (*) : Selects all elements in the document.
+        Eg : * {
+                    margin: 0;
+                }
+
+    --> Tag Name Selector (TagName) : Selects all elements of a specific HTML tag.
+        Eg : p {
+                    color: blue;
+                }
+
+    --> ID Selector (#) : Selects the element with a specific id.
+        Eg : #header {
+                 background-color: black;
+             }
+
+    --> Class Selector (.) : Selects all elements having a specific class.
+        Eg : .container {
+                 width: 80%;
+             }
+
+    --> Grouping Selector : A Grouping Selector is a CSS selector that allows you to select multiple HTML elements and apply the same set of styles to all of them using a comma (,).
+        Eg : h1, h2, h3 {
+                 color: blue;
+                 font-family: Arial;
+             }
+
+
+## Combinator Selector
+-> A Combinator Selector is a CSS selector that selects elements based on the relationship between two or more Simple Selectors.
+
+    --> Descendant Selector (Space " ") : Selects all descendant elements of a specified parent element, regardless of how deeply they are nested.
+    Eg : div p {
+             color: blue;
+         }
+
+    --> Direct Child Selector (>) : Selects only the direct children of a specified parent element.
+    Eg : div > p {
+             color: red;
+         }
+
+    --> Adjacent Sibling Selector (+) : Selects the immediately next sibling of an element.
+        Eg : h1 + p {
+                 color: green;
+             }
+
+    --> General Sibling Selector (~) : Selects all sibling elements that come after a specified element and share the same parent.
+        Eg : h1 ~ p {
+                 color: purple;
+             }
+
+## Pseudo Class Selectors  
+-> A Pseudo-class Selector is a CSS selector that selects an element based on its current state, condition, or position
+-> Pseudo-class selectors begin with a single colon (:).
+
+    --> :link  : Applies styles to links that have not yet been visited.
+    Eg : a:link {
+             color: blue;
+         }
+
+    --> :active : Applies styles while the element is being clicked
+    Eg : button:active {
+             background-color: red;
+         }
+
+    --> :visited : Applies styles to links that have already been visited.
+    Eg : a:visited {
+             color: purple;
+         }
+
+    --> :hover : Applies styles when the user places the mouse pointer over an element.
+    Eg : button:hover {
+             background-color: blue;
+             color: white;
+         }
+
+    --> :first-child :  Selects the first child of its parent.
+    Eg : li:first-child {
+             color: red;
+         }
+    
+    --> :last-child : Selects the last child of its parent.
+    Eg : li:last-child {
+             color: blue;
+         }
+
+    --> :nth-child(n) : Selects child elements based on their position.
+    Eg : li:nth-child(2) {
+             color: green;
+         }
+
+    --> :first-of-type : Selects the first occurrence of a specific element type among its siblings.
+    Eg : p:first-of-type {
+             color: red;
+         }
+
+    --> :last-of-type : Selects the last occurrence of a specific element type among its siblings.
+    Eg : p:last-of-type {
+             color: blue;
+         }
+
+    --> :nth-of-type(n) : Selects the nth occurrence of a specific element type among its siblings.
+    Eg : selector:nth-of-type(n) {
+             property: value;
+         }
+
+## Pseudo Element Selector
+-> A Pseudo-element Selector is a CSS selector that selects and styles a specific part of an HTML element, rather than the entire element itself.
+-> Pseudo-element selectors begin with a double colon (::).
+
+    --> ::before : Inserts content before the content of an element.
+    Eg : p::before {
+                 content: "👉 ";
+             }
+
+    --> ::after : Inserts content after the content of an element.
+    Eg : p::after {
+             content: " ✔";
+         }
+
+    --> ::first-letter : Selects the first letter of an element
+    Eg : p::first-letter {
+             font-size: 30px;
+             color: red;
+         }
+
+    --> ::first-line : Selects the first line of a block-level element
+    Eg : p::first-line {
+             font-weight: bold;
+             color: blue;
+         }
+
+    --> ::selection : Styles the portion of text selected (highlighted) by the user
+    Eg : ::selection {
+             background-color: yellow;
+             color: black;
+         }
+
+    --> ::placeholder : Styles the placeholder text inside form elements
+    Eg : input::placeholder {
+             color: gray;
+             font-style: italic;
+         }
+
+    --> ::marker : Styles the marker (bullet or number) of list items
+    Eg : li::marker {
+             color: red;
+             font-size: 20px;
+         }
