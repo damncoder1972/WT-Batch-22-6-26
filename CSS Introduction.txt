@@ -1,0 +1,47 @@
+CSS : Cascading Style Sheet
+
+Definition
+
+-> It is used to give styling to a webpage and make it look more
+attractive. -> Current standard: CSS Level 3.
+
+==================================================
+
+Ways to Implement CSS
+
+1.  Inline CSS -> CSS is written directly inside the HTML element using
+    the style attribute.
+
+2.  Internal CSS -> CSS is written inside the
+
+    tag, which is placed in the
+
+    section of the HTML document.
+
+3.  External CSS -> CSS is written in a separate .css file and linked to
+    the HTML document using the tag.
+
+==================================================
+
+@import Rule
+
+Definition
+
+-> The @import rule is used to import one CSS file into another CSS
+file.
+
+Example
+
+@import url(“style.css”);
+
+==================================================
+
+CSS Syntax
+
+Definition
+
+-> CSS syntax is the standard structure used to write CSS rules.
+
+Syntax
+
+selector { property: value; }
